@@ -43,8 +43,10 @@ Currently our POST handlers will redirect a user after they create a new record.
 
 @app.route('/todo_lists/<int:id>', methods=["POST"])
 def todo_item_create(id):
+    # Create a new todo_item
     todo_item_table.insert(dict(task=request.form.get("task"), todo_list_id=id, done=False))    
 
+    # return all of the items for a given list
     items = todo_item_table.find(todo_list_id=id)
     items = [x for x in items]
     return render_template("todo_item_partial.html", items=items)
@@ -57,9 +59,11 @@ Also replace the handler for creating a new list.
 
 @app.route('/', methods=['POST'])
 def index_post():
+    # create a new list
     list_name = request.form.get('todo_list_name')
     todo_lists.insert(dict(list_name=list_name))
     
+    # return all of the lists (including our new one)
     results = todo_lists.all()
     lists = [l for l in results]
     return render_template("todo_list_partial.html", lists=lists)
