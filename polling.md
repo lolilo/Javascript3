@@ -28,7 +28,7 @@ Take a peek at the response in the console. We can see it's just HTML. Modify th
 
 Now, let's setup our interval timer to poll the server for new list names every 20 seconds.
 
-````
+````javascript
 // Poll the server every 20 seconds
 setInterval(getListsFromServer, 20000); 
 
