@@ -109,7 +109,7 @@ To handle the database delete, you will find https://dataset.readthedocs.org/en/
 
 
 
-Bonus:
+## Bonus:
 - make the lists sortable(by id or alphabetically)
 - add support to reorder items in the todo list
 - add bootstrap / styling
