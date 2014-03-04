@@ -69,16 +69,15 @@ def index_post():
     return render_template("todo_list_partial.html", lists=lists)
 ````
 
-
-
-
-Create Todo lists using $.ajax
+Create Todo lists using the jquery ajax function
 - Clicking the submit button should post a new todo list to the server using `$.ajax`.  
-- add the new todo list to the end of the list using the done event
+- update the list of lists using the ajax done event
+- the page should not reload
 
-Do the same thing for the todo items.
+Create Todo items using the jquery ajax function
 - Clicking the submit button should post a new todo item to the server using `$.ajax`.  
-- add the new todo item to the end of the list using the done event
+- update the list of items using the ajax done event
+- the page should not reload
 
 Remove the page refresh that happens when clicking on a list name.
 - clicking on a list name should clear the list of lists and replace it with the list of todo items.
@@ -93,7 +92,7 @@ Add the ability to mark a todo item as done.
 - the flask handler should return the list of items rendered in `todo_items_partial.html`.
 - the ajax `done` event should update the list
 
-to handle the database update, you will find https://dataset.readthedocs.org/en/latest/api.html#dataset.Table.update to be helpful.
+To handle the database update, you will find https://dataset.readthedocs.org/en/latest/api.html#dataset.Table.update to be helpful.
 
 Add the ability to delete todo lists and todo items.
 - add a button next to each item / list that triggers a click event to send a post request to the server
