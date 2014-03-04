@@ -8,7 +8,7 @@
 ### Getting started
 Greetings weary travelers.  At this point you've posted your data to the server but would like to have it update the page, not just alert us.
 
-Let's write a function that sends an ajax get request to our backend and log the response out to the console.
+Let's write a function that sends an ajax get request to our backend and log the response out to the console. This should go into `static/js/app.js` in the document.ready function.
 
 
 ````javascript
