@@ -1,9 +1,7 @@
 ### Polling
 #### Where we ask if we're there yet...a lot
 
-### Helpful functions
-`window.setInterval`[https://developer.mozilla.org/en-US/docs/Web/API/Window.setInterval]
-
+What is polling?  Polling is a way to request new data from a server every N seconds. This works well for a small number of users or a high delay between request. 
 
 ### Getting started
 Greetings weary travelers.  At this point you've posted your data to the server but would like to have it update the page, not just alert us.
@@ -40,3 +38,4 @@ Mini Assignment:
 
 
 Save your files, refresh your browser. Open a new browser window to the list app side-by-side with your first window. Start creating a bunch of new lists in one window. Every 20 seconds, you'll see the other windows todo lists update. Awesome!
+
