@@ -85,5 +85,6 @@ At this point if you haven't tested the code, save your files and refresh the pa
 
 We're halfway there! Continue this adventure on `polling.md`
 
+P.S. if the `alert()` is annoying, feel to change it to a `console.log` now.
 
 
