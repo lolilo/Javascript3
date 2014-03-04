@@ -26,7 +26,7 @@ var getListsFromServer = function() {
 
 Take a peek at the response in the console. We can see it's just HTML. Modify the above function to add the list names in the dom instead of printing it in the console.
 
-Now, let's setup our interval timer to poll the server for new list names every 20 seconds.
+Now, let's setup our interval timer to poll the server for new list names every 20 seconds. This code should go right after our getListsFromServer function.
 
 ````javascript
 // Poll the server every 20 seconds
