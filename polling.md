@@ -24,7 +24,7 @@ var getListsFromServer = function() {
 
 ````
 
-Now, let's setup our interval timer to poll the server for list names every 20 seconds. This code should go right after our getListsFromServer function.
+Now, let's setup our interval timer to poll the server for our todo lists every 20 seconds. This code should go right after our getListsFromServer function.
 
 ````javascript
 // Poll the server every 20 seconds
@@ -32,6 +32,9 @@ setInterval(getListsFromServer, 20000);
 
 ````
 
-Save your files and reload the browser. Now every 20 seconds, you will get a console.log with a bunch of html for the lists.  Modify the getListsFromServer function to add the list names to the list of lists instead of logging the output.
+Save your files and reload the browser. Now every 20 seconds, you will get a console.log with a bunch of html for the lists.  
+
+Mini Assignment:
+Modify the getListsFromServer function to add the list names to the list of lists instead of logging the output.
 
 Save your files, refresh your browser. Open a new browser window to the list app side-by-side with your first window. Start creating a bunch of new lists in one window. Every 20 seconds, you'll see the other windows todo lists update. Awesome!
