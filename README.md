@@ -21,9 +21,18 @@ pip install -r requirements.txt
 python api.py
 ````
 
-## Let's Begin
+##  Prework
+Before we get started on the assignment, there are a couple of concepts to work on first. First is how do we send data to the server. For this take a look at `post.md`
 
-Follow the walkthroughs in https://github.com/hackbrightacademy/Javascript3/blob/master/post.md and then https://github.com/hackbrightacademy/Javascript3/blob/master/polling.md. Once you finish those, the assignment is below.
+https://github.com/hackbrightacademy/Javascript3/blob/master/post.md
+
+Now that we've started sending data to our server, we want to have the page update the contents. We can accomplish this with a technique called polling.
+
+For this, workthrough `polling.md`
+https://github.com/hackbrightacademy/Javascript3/blob/master/polling.md
+
+
+## Let's Begin
 
 Assignment:
 
