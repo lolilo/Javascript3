@@ -35,8 +35,6 @@ https://github.com/hackbrightacademy/Javascript3/blob/master/polling.md
 
 ## Assignment:
 
-Building upon what you just did in `post.md`:
-
 Delete the setInterval function. We aren't going to be polling the server anymore.
 
 Currently our POST handlers will redirect a user after they create a new record. Instead we want to return rendered html to the browser. Replace the handler code for creating a new todo item (/todo_lists/<int:id>) with the below handler.
