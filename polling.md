@@ -35,6 +35,8 @@ setInterval(getListsFromServer, 20000);
 Save your files and reload the browser. Now every 20 seconds, you will get a console.log with a bunch of html for the lists.  
 
 Mini Assignment:
-Modify the getListsFromServer function to add the list names to the list of lists instead of logging the output.
+- feel free to modify `index.html` as much as neccessary 
+- Modify the getListsFromServer function to add the list names to the list of lists instead of logging the output.
+
 
 Save your files, refresh your browser. Open a new browser window to the list app side-by-side with your first window. Start creating a bunch of new lists in one window. Every 20 seconds, you'll see the other windows todo lists update. Awesome!
