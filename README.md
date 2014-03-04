@@ -27,7 +27,37 @@ Follow the walkthroughs in https://github.com/hackbrightacademy/Javascript3/blob
 
 Assignment:
 
-Building upon what you just did in `post.md`(NO COPY/PASTING) and without polling the server:
+Building upon what you just did in `post.md`(NO COPY/PASTING):
+
+Delete the setInterval function. We aren't going to be polling the server anymore.
+
+Replace the handler code for creating a new todo item (/todo_lists/<int:id>)  with the below handler.
+
+````python
+
+@app.route('/todo_lists/<int:id>', methods=["POST"])
+def todo_item_create(id):
+    todo_item_table.insert(dict(task=request.form.get("task"), todo_list_id=id, done=False))    
+
+    items = todo_item_table.find(todo_list_id=id)
+    items = [x for x in items]
+    return render_template("todo_item_partial.html", items=items)
+    
+````
+
+Also replace the handler for creating a new list with
+
+````python
+
+@app.route('/', methods=['POST'])
+def index_post():
+    list_name = request.form.get('todo_list_name')
+    todo_lists.insert(dict(list_name=list_name))
+    
+    results = todo_lists.all()
+    lists = [l for l in results]
+    return render_template("todo_list_partial.html", lists=lists)
+````
 
 Create Todo lists using $.ajax
 - Clicking the submit button should post a new todo list to the server using `$.ajax`.  
