@@ -27,11 +27,11 @@ Follow the walkthroughs in https://github.com/hackbrightacademy/Javascript3/blob
 
 Assignment:
 
-Building upon what you just did in `post.md`(NO COPY/PASTING):
+Building upon what you just did in `post.md`:
 
 Delete the setInterval function. We aren't going to be polling the server anymore.
 
-Replace the handler code for creating a new todo item (/todo_lists/<int:id>)  with the below handler.
+Currently our POST handlers will redirect a user after they create a new record. Instead we want to return rendered html to the browser. Replace the handler code for creating a new todo item (/todo_lists/<int:id>)  with the below handler.
 
 ````python
 
@@ -45,7 +45,7 @@ def todo_item_create(id):
     
 ````
 
-Also replace the handler for creating a new list with
+Also replace the handler for creating a new list.
 
 ````python
 
@@ -58,6 +58,9 @@ def index_post():
     lists = [l for l in results]
     return render_template("todo_list_partial.html", lists=lists)
 ````
+
+
+
 
 Create Todo lists using $.ajax
 - Clicking the submit button should post a new todo list to the server using `$.ajax`.  
