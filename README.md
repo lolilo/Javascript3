@@ -28,7 +28,7 @@ Let's start by exploring how to send data to the server. Take a look at `post.md
 
 https://github.com/hackbrightacademy/Javascript3/blob/master/post.md
 
-Now that we've started sending data to our server, we want to have the page update the list of lists. We can accomplish this with a technique called polling. Polling is a way to request fresh data from a server every N seconds.
+Now that we've started sending data to our server, we want to have the page update the list of lists. We can accomplish this with a technique called polling.
 
 https://github.com/hackbrightacademy/Javascript3/blob/master/polling.md
 
