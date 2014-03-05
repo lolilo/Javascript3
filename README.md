@@ -49,7 +49,7 @@ def todo_item_create(id):
     # return all of the items for a given list
     items = todo_item_table.find(todo_list_id=id)
     items = [x for x in items]
-    return render_template("todo_item_partial.html", items=items)
+    return render_template("todo_items_partial.html", items=items)
     
 ````
 
