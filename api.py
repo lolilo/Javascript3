@@ -21,10 +21,15 @@ def index_post():
 
     else:
         todo_lists.insert(dict(list_name=list_name))
-
         flash('Todo list %s created' % list_name)
-
     return redirect('/')
+
+# handler for asynchronous request
+# @app.route('/ajax/todo_list', methods=['POST'])
+# def ajax_todo_list():
+#     results = todo_lists.all()
+#     lists = [l for l in results]
+#     return render_template("todo_list_partial.html", lists=lists)
 
 @app.route('/todo_lists/<int:id>')
 def todo_list_show(id):

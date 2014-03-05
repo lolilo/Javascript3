@@ -11,12 +11,14 @@
                     {{ message}}
                 {% endfor %}
             </div>
-            <div id="todo-list">
-                {% for list in lists %}
-                    <div class="todo-list">
-                        <label for="item{{list.id}}"><a href="/todo_lists/{{list.id}}"> {{list.list_name}}</a></label>
-                    </div>
-                {% endfor %}
+            <div id="todo-list-body">
+                <div id="todo-list">
+                    {% for list in lists %}
+                        <div class="todo-list">
+                            <label for="item{{list.id}}"><a href="/todo_lists/{{list.id}}"> {{list.list_name}}</a></label>
+                        </div>
+                    {% endfor %}
+                </div>
 
                 <form id="todo_list_form" method="POST">
                     <input type="text" name="todo_list_name"></input>
